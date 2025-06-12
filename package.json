@@ -1,0 +1,24 @@
+{
+  "name": "blockbeatsrss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "fast-xml-parser": "^5.2.5",
+    "fastmcp": "^3.0.0",
+    "html-to-text": "^9.0.5",
+    "zod": "^3.25.57"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.15",
+    "@types/html-to-text": "^9.0.4",
+    "@types/node": "^24.0.0"
+  }
+}
