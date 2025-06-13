@@ -4,8 +4,8 @@ import { z } from "zod";
 
 export function registerRss(server: FastMCP) {
   server.addTool({
-    name: "getNewsFlash",
-    description: "Get the latest news flash from theblockbeats",
+    name: "getNews",
+    description: "Get the latest news or articles from theblockbeats",
     parameters: z.object({
       feedType: z
         .string()
