@@ -25,6 +25,6 @@ Go to the `cursor setting - MCP Tools - New MCP Server`, and add your mcp in `mc
 
 ## TODO
 
-- [ ] change rss feed source (for stability and up-to-date news)
+- [x] change rss feed source (for stability and up-to-date news)
 - [ ] add article support
 - [ ] support more news platform

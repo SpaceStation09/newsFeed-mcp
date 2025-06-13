@@ -10,7 +10,7 @@ interface RssItem {
 }
 
 async function getNewsFlash(): Promise<{ item: RssItem[] } | null> {
-  const rssHubUri = `https://rsshub.app/theblockbeats/newsflash`;
+  const rssHubUri = `https://api.theblockbeats.news/v2/rss/newsflash`;
   try {
     const response = await fetch(rssHubUri);
     if (!response.ok) {
@@ -46,7 +46,8 @@ function formatFlash(rss: RssItem[]) {
     item.description = item.description.replace(/\n/g, "");
     return item;
   });
-  const formattedRss = rss.map((item: RssItem) => {
+
+  const formattedRss = result.map((item: RssItem) => {
     const itemText = [
       `title: ${item.title}`,
       `link: ${item.link}`,

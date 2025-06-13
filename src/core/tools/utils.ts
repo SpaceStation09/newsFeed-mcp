@@ -13,6 +13,7 @@ export function convertHtmlToText(html: string): string {
     selectors: [
       { selector: "p", format: "paragraph" },
       { selector: "br", format: "lineBreak" },
+      { selector: "a", options: { hideLinkHrefIfSameAsText: true } },
     ],
   }).trim();
 }
