@@ -93,36 +93,32 @@ function formatRss(rss: RssItem[]) {
   return rssText;
 }
 
-export async function rssFeed(feedType: string): Promise<TextContent> {
-  if (feedType === "newsflash") {
-    const result = await getNewsFlash();
-    if (!result) {
-      return {
-        type: "text",
-        text: "Failed to get news flash",
-      };
-    }
-    const rssText = formatRss(result!.item);
+export async function newsflashFeed(): Promise<TextContent> {
+  const result = await getNewsFlash();
+  if (!result) {
     return {
       type: "text",
-      text: rssText,
-    };
-  } else if (feedType === "articles") {
-    const result = await getArticles();
-    if (!result) {
-      return {
-        type: "text",
-        text: "Failed to get articles",
-      };
-    }
-    const rssText = formatRss(result!.item);
-    return {
-      type: "text",
-      text: rssText,
+      text: "Failed to get news flash",
     };
   }
+  const rssText = formatRss(result!.item);
   return {
     type: "text",
-    text: "Invalid feed type",
+    text: rssText,
+  };
+}
+
+export async function articlesFeed(): Promise<TextContent> {
+  const result = await getArticles();
+  if (!result) {
+    return {
+      type: "text",
+      text: "Failed to get articles",
+    };
+  }
+  const rssText = formatRss(result!.item);
+  return {
+    type: "text",
+    text: rssText,
   };
 }

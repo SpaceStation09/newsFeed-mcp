@@ -1,4 +1,3 @@
-import { XMLParser } from "fast-xml-parser";
 import { htmlToText } from "html-to-text";
 
 /**
