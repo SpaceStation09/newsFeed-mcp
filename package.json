@@ -16,6 +16,9 @@
     "html-to-text": "^9.0.5",
     "zod": "^3.25.57"
   },
+  "peerDependencies": {
+    "typescript": "^5.8.2"
+  },
   "devDependencies": {
     "@types/bun": "^1.2.15",
     "@types/html-to-text": "^9.0.4",

@@ -15,7 +15,7 @@ Go to the `cursor setting - MCP Tools - New MCP Server`, and add your mcp in `mc
 ```json
 {
   "mcpServers": {
-    "weather": {
+    "news": {
       "command": "npx",
       "args": ["tsx","PATH/TO/PROJECT/src/index.ts"]
     }
