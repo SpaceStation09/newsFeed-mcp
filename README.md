@@ -14,12 +14,29 @@ npx fastmcp dev src/index.ts
 
 Go to the `cursor setting - MCP Tools - New MCP Server`, and add your mcp in `mcp.json`
 
+### Local Usage
+
 ```json
 {
   "mcpServers": {
     "news": {
       "command": "npx",
       "args": ["tsx","PATH/TO/PROJECT/src/index.ts"]
+    }
+  }
+}
+```
+
+### Streamable https
+
+Deployed via [`smithery`](https://smithery.ai/). Get your url at [`smithery/@SpaceStation09/newsfeed-mcp`](https://smithery.ai/server/@SpaceStation09/newsfeed-mcp)
+
+```json
+{
+  "mcpServers": {
+    "news": {
+      "type": "streamableHttp",
+      "url": "https://server.smithery.ai/@SpaceStation09/newsfeed-mcp/mcp?api_key=<YOUR_KEY>"
     }
   }
 }
