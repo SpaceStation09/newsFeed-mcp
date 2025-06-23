@@ -1,5 +1,7 @@
 # News feed mcp (WIP)
 
+[![smithery badge](https://smithery.ai/badge/@SpaceStation09/newsfeed-mcp)](https://smithery.ai/server/@SpaceStation09/newsfeed-mcp)
+
 ## Testing Server
 
 You could use [`mcp-cli`](https://github.com/wong2/mcp-cli) for testing and debugging your MCP server in the terminal.
