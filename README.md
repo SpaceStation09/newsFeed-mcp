@@ -25,6 +25,14 @@ Go to the `cursor setting - MCP Tools - New MCP Server`, and add your mcp in `mc
 }
 ```
 
+## Installing via Smithery
+
+To install News Feed Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@SpaceStation09/newsfeed-mcp):
+
+```bash
+npx -y @smithery/cli install @SpaceStation09/newsfeed-mcp --client claude
+```
+
 ## TODO
 
 - [x] change rss feed source (for stability and up-to-date news)
